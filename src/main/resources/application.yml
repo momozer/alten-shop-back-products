@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  datasource:
+    url: jdbc:mysql://localhost:3000/shopBackend?useSSL=false
+    username: root
+    password: hiram
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    server:
+      port: 8081
+
