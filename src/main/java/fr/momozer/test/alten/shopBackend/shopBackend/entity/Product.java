@@ -31,4 +31,5 @@ public class Product {
     private BigDecimal price;
     private Long quantity;
     private EInventoryStatus inventoryStatus;
+    private ECategory category;
 }
