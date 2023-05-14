@@ -43,3 +43,15 @@ vous pouvez lancer le front-end angular avec la commande 'ng serve'
 # Bonus
 
 Vous pouvez ajouter des tests Postman ou Swagger pour valider votre API
+### Test PostMan:
+#### Methode Post pour créer un produit:
+![img.png](img.png)
+
+#### Methode Get pour afficher le (ou les ) produit :
+![img_1.png](img_1.png)
+
+#### Methode Patch pour modifier un produit:
+![img_2.png](img_2.png)
+
+#### Methode Delete pour supprimer un produit:
+![img_3.png](img_3.png)

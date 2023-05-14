@@ -23,26 +23,34 @@ public class Product {
     private Long id;
 
 
-    @Column(name = "code") @NotBlank
+    @Column(name = "code")
+//    @NotBlank
     private String code;
 
 
-    @Column(name = "name") @NotBlank
+    @Column(name = "name")
+//    @NotBlank
     private String name;
 
-    @Column(name = "description") @NotBlank
+    @Column(name = "description")
+//    @NotBlank
     private String description;
 
     @Column(name = "price") @NotNull
     private BigDecimal price;
 
-    @Column(name = "quantity") @NotBlank
+    @Column(name = "quantity")
+//    @NotBlank
     private Long quantity;
 
-    @Enumerated(EnumType.STRING) @NotBlank
+    @Enumerated(EnumType.STRING)
+//    @NotBlank
+    @Column(name = "inventory_status")
     private EInventoryStatus inventoryStatus;
 
-    @Enumerated(EnumType.STRING) @NotBlank
+    @Enumerated(EnumType.STRING)
+//    @NotBlank
+    @Column(name = "category")
     private ECategory category;
 
     @Column(name = "image")
@@ -51,5 +59,7 @@ public class Product {
     @Column(name = "rating")
     @Min(0)
     @Max(10)
+    //les @Min et @Max permettent de définir un système de notation. La plus petit valeur autorisée est 0 et la plus
+    // grande 10
     private double rating;
 }

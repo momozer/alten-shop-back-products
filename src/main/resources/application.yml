@@ -1,5 +1,6 @@
 spring:
   datasource:
+    #Ici Localhost en 3306.A modifier si besoin (mais à configurer avec la connexion à la BDD).
     url: jdbc:mysql://localhost:3306/shopBackend?useSSL=false
     username: root
     password: hiram
@@ -8,18 +9,6 @@ spring:
     hibernate:
       ddl-auto: update
     server:
-      port: 8082
+      port: 8081
 
-#spring:
-#  datasource:
-#    url: jdbc:mysql://localhost:3000/shopbackend
-#    username: root
-#    password: hiram
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#  jpa:
-#    database-platform: org.hibernate.dialect.MySQL8Dialect
-#    show-sql: true
-#    hibernate:
-#      ddl-auto: create
-#    server: 8081
 
