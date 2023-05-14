@@ -1,6 +1,6 @@
 spring:
   datasource:
-    #Ici Localhost en 3306.A modifier ci besoin (mais à configurer avec la connexion à la BDD).
+    #Ici Localhost en 3306.A modifier si besoin (mais à configurer avec la connexion à la BDD).
     url: jdbc:mysql://localhost:3306/shopBackend?useSSL=false
     username: root
     password: hiram
