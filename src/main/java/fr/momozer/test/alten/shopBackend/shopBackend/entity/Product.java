@@ -40,9 +40,11 @@ public class Product {
     private Long quantity;
 
     @Enumerated(EnumType.STRING) @NotBlank
+    @Column(name = "inventory_status")
     private EInventoryStatus inventoryStatus;
 
     @Enumerated(EnumType.STRING) @NotBlank
+    @Column(name = "category")
     private ECategory category;
 
     @Column(name = "image")
